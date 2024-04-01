@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTP-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0">
+    <title>Ineke Nur Puspitasari Fauziah_2120074_WPII_2.6A</title>
+<style>
+    /* CSS style */
+    body { 
+        font-family: Arial, sans-serif;
+    }
+    #inputfield {
+        padding: 10px;
+        font-size: 16px;
+    }
+    #displayArea {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+</style>
+</head>
+<body>
+    <!-- HTML content -->
+    <input type="text" id="inputfield" placeholder="Enter text...">
+    <button onclick="displayText()">Display</button>
+    <div id="displayArea"></div>
+
+    <!-- JavaScript code -->
+    <script>
+        function displayText() {
+            // Get the input value
+            var inputText = document.getElementById("inputfield").value;
+
+            // Get the display area
+            var displayArea = document.getElementById("displayArea");
+
+            // Display the input value
+            displayArea.innerText = inputText;
+        }
+    </script>
+</body>
+</html>
